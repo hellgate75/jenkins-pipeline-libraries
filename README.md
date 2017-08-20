@@ -3,19 +3,20 @@
 
 Useful Jenkins Pipeline Libraries to use for whatever.
 
-##Prerequisites
+## Prerequisites
 
 * Jenkins 2.30+
 * [Pipeline Shared Libraries](https://github.com/jenkinsci/workflow-cps-global-lib-plugin) plugin
 * Other plugins may be required for specific library calls (i.e. Docker)
 
-##Usage
+## Usage
 
 1. Add global library 'pipelines' pointing to github in Jenkins settings (Manage Jenkins > Configure System > Global Pipeline Libraries)
 2. Add `@Library('pipelines')` into your pipeline definition (more details [here](https://github.com/jenkinsci/workflow-cps-global-lib-plugin))
 
-##Examples
-###Build and push tag
+## Examples
+
+### Build and push tag
 ```groovy
 registry = '<SOME ECR REGISTRY>'
 
@@ -51,7 +52,7 @@ node{
 }
 ```
 
-###Select tag
+### Select tag
 ```groovy
 registry = '<SOME ECR REGISTRY>'
 
@@ -83,3 +84,6 @@ node{
 
 }
 ```
+### License
+
+[LGPL v.3](https://github.com/hellgate75/jenkins-pipeline-libraries/tree/master/LICENSE)
