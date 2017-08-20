@@ -12,8 +12,8 @@ Useful Jenkins Pipeline Libraries to use for whatever.
 
 ##Usage
 
-1. Add global library 'buildit' pointing to github in Jenkins settings (Manage Jenkins > Configure System > Global Pipeline Libraries)
-2. Add `@Library('buildit')` into your pipeline definition (more details [here](https://github.com/jenkinsci/workflow-cps-global-lib-plugin))
+1. Add global library 'pipelines' pointing to github in Jenkins settings (Manage Jenkins > Configure System > Global Pipeline Libraries)
+2. Add `@Library('pipelines')` into your pipeline definition (more details [here](https://github.com/jenkinsci/workflow-cps-global-lib-plugin))
 
 ##Examples
 ###Build and push tag
