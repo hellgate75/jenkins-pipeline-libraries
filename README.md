@@ -1,6 +1,5 @@
 # Jenkins Pipeline Libraries
 [![Build Status](https://travis-ci.org/hellgate75/jenkins-pipeline-libraries.svg?branch=master)](https://travis-ci.org/hellgate75/jenkins-pipeline-libraries)
-[![Download](https://api.bintray.com/packages/hellgate75/maven/jenkins-pipeline-libraries/images/download.svg) ](https://bintray.com/hellgate75/maven/jenkins-pipeline-libraries/_latestVersion)
 
 Useful Jenkins Pipeline Libraries to use for whatever.
 
