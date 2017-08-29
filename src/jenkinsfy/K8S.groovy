@@ -1,11 +1,11 @@
-package buildit
+package jenkinsfy
 
 class K8S implements Serializable {
 
     def CACHE_BASE = '/var/cache/'
     def HOST_CACHE_BASE = '/tmp/'
     def DOCKER_IMG = 'docker:1.11'
-    def KUBECTL_IMG = 'builditdigital/kube-utils'
+    def KUBECTL_IMG = 'jenkinsfy/kube-utils'
 
     final script
     final JOB_NAME

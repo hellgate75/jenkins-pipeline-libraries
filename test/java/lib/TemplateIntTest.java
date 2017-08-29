@@ -31,9 +31,9 @@ public class TemplateIntTest extends PipelineTest {
 
         WorkflowJob p = r.jenkins.createProject(WorkflowJob.class, "p");
         final FilePath dir = new FilePath(new File("."));
-        GlobalLibraries.get().setLibraries(singletonList(new LibraryConfiguration("buildit", new LocalLibraryRetriever(dir))));
+        GlobalLibraries.get().setLibraries(singletonList(new LibraryConfiguration("jenkinsfy", new LocalLibraryRetriever(dir))));
         p.setDefinition(new CpsFlowDefinition(
-                "@Library('buildit@local')\n" +
+                "@Library('jenkinsfy@local')\n" +
                         "def ann = ''\n" +
                         "node() {\n" +
                         "   echo new template().transform('result is ${notDefined} and ${definedVal}', [definedVal: 123])\n" +

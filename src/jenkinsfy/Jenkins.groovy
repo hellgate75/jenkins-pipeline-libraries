@@ -1,4 +1,4 @@
-package buildit
+package jenkinsfy
 
 class Jenkins {
     static Map getGlobalEnv() {
