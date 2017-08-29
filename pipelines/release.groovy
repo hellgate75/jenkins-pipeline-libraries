@@ -1,4 +1,4 @@
-@Library('buildit')
+@Library('jenkinsfy')
 
 def shellLib = new shell()
 def pomLib = new pom()
